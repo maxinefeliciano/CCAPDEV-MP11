@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" media="all" href="main.css">
+	<title>Rating</title>
+</head>
+
+<body>
+	<button id="btn"><span id="display">I found this helpful!: 0</span></button>
+
+	<script type="text/javascript">
+		var count = 0;
+		var btn = document.getElementById("btn");
+		var disp = document.getElementById("display");
+
+		btn.onclick = function () {
+			count++;
+			disp.innerHTML = "I found this helpful!: " + count;
+		}
+	</script>
+</body>
+
+</html>
