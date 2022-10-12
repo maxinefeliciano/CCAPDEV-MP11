@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Study Resources</title>
+    <link rel="stylesheet" type="text/css" media="all" href="navStyles.css">
+</head>
+
+<body>
+    
+    <!--Header-->
+    <div id = "header">
+        <a href="menu.html"><img src="images/course-hero-logo.png" alt="Course Hero Logo" align="left"></a>
+        <div class="topnav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="menu.html" class="resource">LBYITN4 1.1 Single Area OSPF Configuration</a>
+                    <a href="menu.html" class="resource">LBYITN4 1.2 Fine Tuning OSPF</a>
+                    <a href="menu.html" class="resource">LBYITN4 2.1 Exploring DNS Traffic</a>
+                    <a href="menu.html" class="resource">LBYITN4 3.1 IPv4 Extended ACL Configuration</a>
+                    <a href="menu.html" class="resource">ITSRAQA System Implementation</a>
+                    <a href="menu.html" class="resource">ITSRAQA Quality Assurance</a>
+                    <a href="menu.html" class="resource">ITSRAQA Problem Analysis</a>
+                    <a href="menu.html" class="resource">ITSRAQA Process Modeling</a>
+                    <a href="menu.html" class="resource">ITSYSOP Reflection #1</a>
+                    <a href="menu.html" class="resource">LCLSTRI Lasallian Story Campaign Ad</a>
+                    <a href="menu.html" class="resource">LCLSTRI My Heroic Vow</a>
+                </div>
+            </div>
+            <a href="signUp.html">Log Out</a>
+            <a href="editProfile.html">Edit Profile</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+    </script>
+
+    <!--Page Title-->
+    <div class = page-title>
+        <h1>Upload Study Resources</h1>
+    </div>
+
+    <!--Upload Box-->
+    <div class="upload-box">
+        <form action="#">
+            <input class="file-input" type="file" name="file" hidden>
+            <img src="images/upload-icon.png" alt="Upload Icon">
+            <p>Browse Files to Upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+
+</body>
+</html>
