@@ -15,7 +15,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-color: #F9FAFC;
+    background: url(images/bg.png);
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
