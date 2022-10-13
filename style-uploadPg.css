@@ -1,0 +1,118 @@
+:root {
+    --color-primary: #002DE4;
+    --color-secondary: #211B89;
+    --color-titles: #0B0B19;
+    --color-desc: #D9DEFF;
+	--color-border: rgb(214, 214, 214);
+    --color-button: #EDF0F5;
+    --color-button-hover: #D9E0E6;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #F9FAFC;
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: white;
+    border-style: solid;
+    border-color: var(--color-border);
+    border-width: 1px;
+}
+
+#navbar img {
+    height: 30px;
+}
+
+/*Page Title*/
+
+.page-title {
+    margin-left: 20px;
+}
+
+.page-title h1 {
+    margin-top: 15px;
+    margin-block-end: 10px;
+    font-size: 30px;
+}
+
+/*Upload Area*/
+.upload-area {
+    display: flex;
+    width: 55%;
+    height: 55%;
+    margin-left: 20px;
+    padding: 5px;
+    
+}
+
+/*Upload Box*/
+#upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-left: 20px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+}
+
+.browse-files {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+    cursor: pointer;
+}
+
+.browse-files img {
+    height: 50px;
+}
+
+.browse-files #upload-text {
+    margin-top: 15px;
+    color: #6990F2;
+    font-size: 16px;
+    text-align: center;
+}
+  
+.fill-info {
+    width: 60%;
+    height: 80%;
+    margin-left: 30px;
+    color: var(--color-titles);
+    font-weight: bold;
+}
+
+.fill-info select {
+    font-size: 16px;
+}
+
+.info #title {
+    font-size: 22px;
+    width: 400px;
+}
+
+.info #brief-desc {
+    width: 400px;
+    height: 60px;
+}

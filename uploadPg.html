@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style-uploadPg.css">
+</head>
+
+<body>
+    
+    <!--Navigation Bar-->
+    <div id = "navbar">
+        <img src="images/course-hero-logo.png" alt="Course Hero Logo">
+    </div>
+
+    <!--Page Title-->
+    <div class = page-title>
+        <h1>Upload Study Resources</h1>
+    </div>
+
+    <!--Upload Area (LHS)-->
+    <div class="upload-area">
+
+        <!--Upload Box-->
+        <div id="upload-box">
+            <form class="browse-files">
+                <input type="file" id="real-file" hidden>
+                <img src="images/upload-icon.png" alt="Upload Icon" id="upload-icon">
+                <p id="upload-text">Browse Files to Upload</p>
+            </form> 
+        </div>
+        
+        <!--File Details-->
+        <div class="fill-info">
+            <form>
+                <!--Subject-->
+                <div class="info">
+                    <label for="subjectCat">Subject Category: </label>
+                    <select name="subject" id="subjectCat" required>
+                        <option value="" selected disabled hidden>Select a Subject</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="social-science">Social Science</option>
+                        <option value="natural-science">Natural Science</option>
+                        <option value="formal-science">Formal Science</option>
+                        <option value="applied-science">Applied Science</option>
+                    </select>
+                </div>  
+                <br>
+
+                <!--Document Type-->
+                <div class="info">
+                    <label for="docType">Document Type: </label>
+                    <select name="info" id="docType" required>
+                        <option value="" selected disabled hidden>Select a Document Type</option>
+                        <option value="practice-quiz">Practice Quiz</option>
+                        <option value="class-notes">Class Notes</option>
+                        <option value="case-study">Case Study</option>
+                        <option value="study-guide">Study Guide</option>
+                        <option value="sample-assignment">Sample Assignment</option>
+                    </select>
+                </div>  
+                <br>
+                
+                <!--Title-->
+                <div class="info">
+                    <label for="title">Title: </label><br>
+                    <input type="text" id="title" required>
+                </div> 
+                <br> 
+
+                <!--Brief Description-->
+                <div class="info">
+                    <label for="brief-desc">Brief Description: </label><br>
+                    <textarea id="brief-desc" name="desc" placeholder="Write something.."></textarea>
+                </div>  
+                <br>
+
+                <!--Upload Buttons-->
+                <div class="upload-buttons">
+                    <input type="reset">
+                </div>
+                <br>
+                
+                <div class="upload-buttons">
+                    <input type="submit">
+                </div>
+            </form>
+    </div>
+
+    <script src="script-uploadPg.js"></script>
+</body>
+</html>
