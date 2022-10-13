@@ -16,80 +16,180 @@
         <img src="images/course-hero-logo.png" alt="Course Hero Logo">
     </div>
 
-    <!--Page Title-->
-    <div class = page-title>
-        <h1>Upload Study Resources</h1>
-    </div>
-
-    <!--Upload Area (LHS)-->
-    <div class="upload-area">
-
-        <!--Upload Box-->
-        <div id="upload-box">
-            <form class="browse-files">
-                <input type="file" id="real-file" hidden>
-                <img src="images/upload-icon.png" alt="Upload Icon" id="upload-icon">
-                <p id="upload-text">Browse Files to Upload</p>
-            </form> 
-        </div>
+    <div class="wrapper">
         
-        <!--File Details-->
-        <div class="fill-info">
-            <form>
-                <!--Subject-->
-                <div class="info">
-                    <label for="subjectCat">Subject Category: </label>
-                    <select name="subject" id="subjectCat" required>
-                        <option value="" selected disabled hidden>Select a Subject</option>
-                        <option value="humanities">Humanities</option>
-                        <option value="social-science">Social Science</option>
-                        <option value="natural-science">Natural Science</option>
-                        <option value="formal-science">Formal Science</option>
-                        <option value="applied-science">Applied Science</option>
-                    </select>
-                </div>  
-                <br>
+        <div class="left">
 
-                <!--Document Type-->
-                <div class="info">
-                    <label for="docType">Document Type: </label>
-                    <select name="info" id="docType" required>
-                        <option value="" selected disabled hidden>Select a Document Type</option>
-                        <option value="practice-quiz">Practice Quiz</option>
-                        <option value="class-notes">Class Notes</option>
-                        <option value="case-study">Case Study</option>
-                        <option value="study-guide">Study Guide</option>
-                        <option value="sample-assignment">Sample Assignment</option>
-                    </select>
-                </div>  
-                <br>
-                
-                <!--Title-->
-                <div class="info">
-                    <label for="title">Title: </label><br>
-                    <input type="text" id="title" required>
-                </div> 
-                <br> 
+            <!--Page Title-->
+            <div class="page-title">
+                <h1>Upload Study Resources</h1>
+            </div>
+            
+            <div class="wrapper-left">
 
-                <!--Brief Description-->
-                <div class="info">
-                    <label for="brief-desc">Brief Description: </label><br>
-                    <textarea id="brief-desc" name="desc" placeholder="Write something.."></textarea>
-                </div>  
-                <br>
-
-                <!--Upload Buttons-->
-                <div class="upload-buttons">
-                    <input type="reset">
+                <!--Upload Box-->
+                <div id="upload-box">
+                    <form class="browse-files">
+                        <input type="file" id="real-file" hidden>
+                        <img src="images/upload-icon.png" alt="Upload Icon" id="upload-icon">
+                        <p id="upload-text">Browse Files to Upload</p>
+                    </form> 
                 </div>
-                <br>
-                
-                <div class="upload-buttons">
-                    <input type="submit">
+
+                <!--File Information-->
+                <div class="fill-info">
+                    <form>
+                        <!--Subject-->
+                        <div class="info">
+                            <label for="subjectCat">Subject Category: </label>
+                            <select name="subject" id="subjectCat" required>
+                                <option value="" selected disabled hidden>Select a Subject</option>
+                                <option value="humanities">Humanities</option>
+                                <option value="social-science">Social Science</option>
+                                <option value="natural-science">Natural Science</option>
+                                <option value="formal-science">Formal Science</option>
+                                <option value="applied-science">Applied Science</option>
+                            </select>
+                        </div>  
+                        <br>
+
+                        <!--Document Type-->
+                        <div class="info">
+                            <label for="docType">Document Type: </label>
+                            <select name="info" id="docType" required>
+                                <option value="" selected disabled hidden>Select a Document Type</option>
+                                <option value="practice-quiz">Practice Quiz</option>
+                                <option value="class-notes">Class Notes</option>
+                                <option value="case-study">Case Study</option>
+                                <option value="study-guide">Study Guide</option>
+                                <option value="sample-assignment">Sample Assignment</option>
+                            </select>
+                        </div>  
+                        <br>
+                        
+                        <!--Title-->
+                        <div class="info">
+                            <label for="title">Title: </label><br>
+                            <input type="text" id="title" required>
+                        </div> 
+                        <br> 
+
+                        <!--Brief Description-->
+                        <div class="info">
+                            <label for="brief-desc">Brief Description: (Optional)</label><br>
+                            <textarea id="brief-desc" name="desc" placeholder="Write something.."></textarea>
+                        </div>  
+                        <br>
+
+                        <!--Upload Buttons-->
+                        <div class="upload-buttons">
+                            <input type="reset" id="reset-button">
+                            <input type="submit" id="submit-button">
+                        </div>
+                    
+                    </form>
                 </div>
-            </form>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Your Uploads</h2>
+
+            <div class="wrapper-right">
+
+                <!--Resources List-->
+                <div class="resources-list">
+
+                    <div class="sample-resource">
+                        <img src="images/document-icon.png" alt="Document Icon">
+                        <p>
+                            Subject Category: <br>
+                            Document Type: <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <img src="images/document-icon.png" alt="Document Icon">
+                        <p>
+                            Subject Category: <br>
+                            Document Type: <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <img src="images/document-icon.png" alt="Document Icon">
+                        <p>
+                            Subject Category: <br>
+                            Document Type: <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <img src="images/document-icon.png" alt="Document Icon">
+                        <p>
+                            Subject Category: <br>
+                            Document Type: <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <img src="images/document-icon.png" alt="Document Icon">
+                        <p>
+                            Subject Category: <br>
+                            Document Type: <br>
+                            Title: 
+                        </p>
+                    </div>
+                </div>
+
+                <!--Resources Information-->
+                <div class="resources-info">
+                    <div class="sample-resource">
+                        <p>
+                            Humanities <br>
+                            Practice Quiz <br> 
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <p>
+                            Social Science <br>
+                            Class Notes <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <p>
+                            Natural Science <br>
+                            Case Study <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <p>
+                            Formal Science <br>
+                            Study Guide <br>
+                            Title: 
+                        </p>
+                    </div>
+                    <div class="sample-resource">
+                        <p>
+                            Applied Science <br>
+                            Sample Assignment <br>
+                            Title: 
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    
     </div>
-
+    
     <script src="script-uploadPg.js"></script>
 </body>
 </html>
