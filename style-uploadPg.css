@@ -171,11 +171,13 @@ body {
 }
 
 .upload-buttons {
-    display: flex;
     margin-top: 22px;
+    text-align: center;
 }
 
 .upload-buttons input {
+    margin-left: 40px;
+    margin-right: 40px;
     width: 80px;
 }
 
