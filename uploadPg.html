@@ -12,9 +12,46 @@
 <body>
     
     <!--Navigation Bar-->
-    <div id = "navbar">
-        <img src="images/course-hero-logo.png" alt="Course Hero Logo">
+    <div id = "header">
+        <a href="uploadPg.html"><img src="images/testlogo2.png" alt="Course Hero Logo" align="left"></a>
+        <div class="topnav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="view.html" class="resource">History: African History</a>
+                    <a href="view.html" class="resource">Economics: Applied Economics</a>
+                    <a href="view.html" class="resource">Physics: Quantum Physics</a>
+                    <a href="view.html" class="resource">Computer Science: Logic Programming</a>
+                    <a href="view.html" class="resource">Architecture: Interior Architecture</a>
+                </div>
+            </div>
+            <a href="index.html">Log Out</a>
+            <a href="profile.html">Edit Profile</a>
+        </div>
     </div>
+
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+    </script>
 
     <div class="wrapper">
         
