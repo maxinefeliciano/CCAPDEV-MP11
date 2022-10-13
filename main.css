@@ -1,6 +1,10 @@
 body {
-    --color-primary: #008552;
-    --color-secondary: #00643e;
+    --color-primary: #002de4;
+    --color-secondary: #211B89;
+    --text-primary: #0b0b19;
+    --text-secondary: #d9deff;
+    --color-dash: #f9fafc;
+    --color-page: #ffffff;
     --color-error: #ff0000;
     --color-success: #4bb544;
     --border-radius: 4px;
@@ -11,9 +15,26 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background: url(./bg.png);
+    background: url(images/bg.png);
     background-size: cover;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: white;
+    border-style:none;
+    border-color: var(--color-dash);
+    border-width: 1px;
+}
+
+.navbar img {
+    height: 30px;
+}
+
+
 
 .container{
     width: 400px;
@@ -25,6 +46,14 @@ body {
     background-color: #ffffff;
 }
 
+
+.logo{
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 .container,
 .form__input,
 .form__button{
@@ -126,4 +155,156 @@ body {
 
 .form__link:hover {
     text-decoration: underline;
+}
+
+
+
+
+/*Profile Modifiers*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  body{
+     background-color: #f3f3f3;
+  }
+  
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 75%;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  }
+
+
+  .wrapper .left{
+    width: 35%;
+    background: var(--color-primary);
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: var(--color-page);
+  }
+  
+  .wrapper .left img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .left h2{
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .left p{
+    font-size: 30px;
+  }
+  
+  .wrapper .right{
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .wrapper .right .info,
+  .wrapper .right .document_format{
+    margin-bottom: 25px;
+  }
+  
+  .wrapper .right .info h2,
+  .wrapper .right .document_format h3{
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--color-dash);
+      color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .wrapper .right .info_data,
+  .wrapper .right .docu_data{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wrapper .right .info_data .data,
+  .wrapper .right .docu_data .data{
+    width: 45%;
+  }
+  
+  .wrapper .right .info_data .data h3,
+  .wrapper .right .docu_data .data h3{
+      color: var(--text-primary);
+      margin-bottom: 5px;
+  }
+  
+  .wrapper .right .info_data .data p,
+  .wrapper .right .docu_data .data p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+  }
+  
+  .edit__button{
+    width: 50%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:#ffffff;
+    border: solid #ffffff;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+    float:left;
+    margin-top: 18rem;
+}
+
+
+
+.edit__button:hover {
+    background: var(--color-secondary);
+}
+
+.edit__button:active {
+    transform: scale(0.98);
+}
+.delete__button{
+    width: 50%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:#ffffff;
+    border: solid #ffffff;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: #c90000;
+    float:left;
+    margin-top: 18rem;
+    opacity: 30%;
+}
+.delete__button:hover {
+    background: #940000;
+}
+
+.delete__button:active {
+    transform: scale(0.98);
 }

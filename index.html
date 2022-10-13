@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS_FrontEnd</title>
-    <link rel="shortcut icon" href="testlogo.png">
+    <link rel="shortcut icon" href="images/testlogo.png">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <form class="form " id="login">
+            <img class="logo" src="images/testlogo.png">
             <h1 class="form__title ">Login</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
@@ -32,6 +33,9 @@
             </p>
             <p class="form__text">
                 <a  class="form__link" href="./" id="linkCreateAccount">Sign Up</a>
+            </p>
+            <p class="form__text">
+                <a href="uploadPg.html" class="form__link">For Demonstration</a>
             </p>
         </form>
         <form class="form form--hidden" id="createAccount">
@@ -53,13 +57,14 @@
                 <input type="password" class="form__input" autofocus placeholder="Confirm Password">
                 <div class="form__input-error-message"></div>
             </div>
+            
             <button class="form__button" type="submit">Continue</button>
+
             <p class="form__text">
                 <a  class="form__link" href="./" id="linkLogin">Already have an account? Login</a>
             </p>
         </form>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>
