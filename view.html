@@ -16,9 +16,9 @@
         <a href="uploadPg.html"><img src="images/testlogo2.png" alt="Course Hero Logo" align="left"></a>
         <div class="topnav">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Search</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <button onclick="dropdown()" class="drop-button">Search</button>
+                <div id="Dropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="Input" onkeyup="filter()">
                   <a href="view.html" class="resource">History: African History</a>
                   <a href="view.html" class="resource">Economics: Applied Economics</a>
                   <a href="view.html" class="resource">Physics: Quantum Physics</a>
@@ -32,19 +32,21 @@
     </div>
 
     <script>
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
+        function dropdown() {
+          document.getElementById("Dropdown").classList.toggle("show");
         }
         
-        function filterFunction() {
+        function filter() {
           var input, filter, ul, li, a, i;
-          input = document.getElementById("myInput");
+
+          input = document.getElementById("Input");
           filter = input.value.toUpperCase();
-          div = document.getElementById("myDropdown");
+          div = document.getElementById("Dropdown");
           a = div.getElementsByTagName("a");
+
           for (i = 0; i < a.length; i++) {
-            txtValue = a[i].textContent || a[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            txt = a[i].innerText || a[i].textContent;
+            if (txt.toUpperCase().indexOf(filter) > -1) {
               a[i].style.display = "";
             } else {
               a[i].style.display = "none";
