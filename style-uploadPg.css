@@ -23,7 +23,6 @@ body {
 #header {
 	background-color: rgb(246, 246, 246);
     height: 50px;
-    text-align: center;
     border-style: solid;
     border-color: var(--color-border);
     border-width: 1px;
@@ -33,6 +32,14 @@ body {
 #header img {
     margin: 10px;
     height: 30px;
+    text-align: left;
+}
+
+.topnav {
+    position: fixed;
+    width: fit-content;
+    top: 0;
+    right: 10px;
 }
 
 .topnav a {
@@ -92,7 +99,8 @@ body {
 #myInput:focus {outline: 3px solid #ddd;}
   
 .dropdown {
-    position: relative;
+    position: fixed;
+    left: 1000px;
     display: inline-block;
 }
 
@@ -126,6 +134,7 @@ body {
     height: 75%;
     display: flex;
     box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    z-index: -1;
 }
 
 .wrapper .left {
